@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+:root{
+  --bgColor:#33A1FD;
+  --secondary-color:#FDCA40;
+  --contrast-color: #2176FF;
+  --main-font: Akshar;
+  --shadow-prop:5px 5px 15px 5px rgba(0,0,0,0.6);
+}
+body{
+  background-color: var(--bgColor);
+  font-family:var(--main-font);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.editor-wrapper{
+  margin-bottom: 20px;
+}
+#editor{
+  height: 200px;
+  width: 45rem;
+  margin: 0;
+  box-shadow: var(--shadow-prop);
+}
+.editor-wrapper .header{
+  width: 96.8%;  
+}
+.header{
+  background-color: var(--contrast-color);
+  padding: 5px;
+  margin:0;
+  font-weight: bold;
+  color:white;
+  box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.7);
+}
+#preview-wrapper{
+  background-color:var(--secondary-color);
+  margin:0;
+  box-shadow: var(--shadow-prop);
+}
+#preview{
+  padding: 10px;
+  max-width: 45rem;
+}
+code{
+  background-color: white;
+  font-weight:bold;
+  padding: 2px;
+}
+pre{
+  background-color:white;
+  padding: 10px;
+}
+img{
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+}
